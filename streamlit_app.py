@@ -69,7 +69,7 @@ user_name = st.text_input("이름을 입력하세요")
 if user_name:
     # 과목 입력
     subject_mapping = {}
-    st.write(f"{class_number} 반에서 사용하는 알파벳: {', '.join(class_alphabets[class_number])}")
+    st.write(f"{class_number} 반에 해당되는 수업: {', '.join(class_alphabets[class_number])}")
     for alpha in class_alphabets[class_number]:
         subject_mapping[alpha] = st.text_input(f"{user_name} 님의 {alpha} 과목: ", key=alpha)
 
