@@ -86,4 +86,5 @@ if user_name:
     st.write(f"### 🏫 {class_number}반 {user_name}의 시간표")
     st.dataframe(df)
 
- st.write(f"### 🏫 {class_number}반 {user_name}의 시간표")
+st.write("시간표")
+st.title("팔마 3학년 시간표 생성")
