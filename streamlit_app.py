@@ -81,6 +81,7 @@ if user_name:
     final_timetable = convert_timetable(timetable_template[class_number], subject_mapping)
 
     # 시간표 표시
-    df = pd.DataFrame.from_dict(final_timetable, orient=["1교시", "2교시", "3교시", "4교시", "5교시", "6교시", "7교시"], columns='index')
+    df = pd.DataFrame.from_dict(final_timetable, orient='index', columns=["1교시", "2교시", "3교시", "4교시", "5교시", "6교시", "7교시"])
+    df = df.transpose()
     st.write(f"### 🏫 {class_number}반 {user_name}의 시간표")
     st.dataframe(df)
