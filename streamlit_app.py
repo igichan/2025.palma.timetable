@@ -89,4 +89,4 @@ if user_name:
 
 st.write("@liobadoil")
 st.write("")
-st.write("@Beta Test")
+st.write("Beta Test")
