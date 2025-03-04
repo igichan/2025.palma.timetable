@@ -86,7 +86,9 @@ if user_name:
     st.write(f"### 🏫 {class_number}반 {user_name}의 시간표")
     st.dataframe(df)
     
-
+st.write("")
+st.write("")
+st.write("")
 st.write("@liobadoil")
 st.write("")
 st.write("Beta Test")
